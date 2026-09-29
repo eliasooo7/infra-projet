@@ -1,0 +1,5 @@
+- hosts: web
+  become: true
+  tasks:
+    - name: Verifier la connectivite
+      ansible.builtin.ping:
